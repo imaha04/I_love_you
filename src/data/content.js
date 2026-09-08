@@ -121,25 +121,21 @@ const content = {
   },
   timeline: [
     {
-      date: '24.03.2026',
       title: 'Всё началось здесь.',
       image: images.story3,
       position: '50% 45%',
     },
     {
-      date: '26.04.2026',
       title: 'Первое из множества «вместе».',
       image: images.story2,
       position: '50% 48%',
     },
     {
-      date: '10.06.2026',
       title: 'Моменты, которые хочется сохранить.',
       image: images.story1,
       position: '50% 42%',
     },
     {
-      date: '14.08.2026',
       title: 'Мы.',
       image: images.story4,
       position: '50% 48%',
