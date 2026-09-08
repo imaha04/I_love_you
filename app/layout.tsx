@@ -44,8 +44,10 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/hero-960.webp"
-          type="image/webp"
+          href="/images/couple-hero-640.avif"
+          imageSrcSet="/images/couple-hero-640.avif 640w, /images/couple-hero-960.avif 960w"
+          imageSizes="100vw"
+          type="image/avif"
           fetchPriority="high"
         />
       </head>

@@ -63,7 +63,7 @@ export default function Hero({ content, start = true }) {
           {hero.eyebrow}
         </m.p>
 
-        <div className="flex flex-col items-center">
+        <div className="flex translate-y-[7vh] flex-col items-center sm:translate-y-[5vh]">
           <m.h1
             variants={reveal}
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
