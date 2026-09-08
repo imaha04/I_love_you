@@ -18,8 +18,7 @@ function StoryImage({ item, index }) {
     <m.div
       ref={imageRef}
       initial={reduceMotion ? false : { clipPath: 'inset(0 0 100% 0)' }}
-      whileInView={{ clipPath: 'inset(0 0 0% 0)' }}
-      viewport={{ once: true, amount: 0.18 }}
+      animate={{ clipPath: 'inset(0 0 0% 0)' }}
       transition={{ duration: 1.15, delay: index * 0.03, ease: [0.76, 0, 0.24, 1] }}
       className="relative aspect-[4/5] overflow-hidden bg-[#ded7ca]"
     >
@@ -49,7 +48,7 @@ export default function Timeline({ content }) {
   return (
     <section
       ref={sectionRef}
-      className="defer-section relative bg-paper px-[var(--page-gutter)] py-[clamp(7rem,14vw,13rem)]"
+      className="relative bg-paper px-[var(--page-gutter)] py-[clamp(7rem,14vw,13rem)]"
     >
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-[clamp(6rem,12vw,11rem)] max-w-4xl">

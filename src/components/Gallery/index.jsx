@@ -26,7 +26,7 @@ export default function Gallery({ content }) {
   const selectedItem = selected === null ? items[0] : items[selected];
 
   return (
-    <section className="defer-section bg-ivory px-[var(--page-gutter)] py-[clamp(7rem,15vw,14rem)]">
+    <section className="bg-ivory px-[var(--page-gutter)] py-[clamp(7rem,15vw,14rem)]">
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-[clamp(4rem,9vw,8rem)] md:grid md:grid-cols-2 md:items-end md:gap-16">
           <h2 className="editorial-serif text-[clamp(3.9rem,9vw,8.8rem)] font-normal italic leading-[0.78] tracking-[-0.055em]">
@@ -48,8 +48,7 @@ export default function Gallery({ content }) {
               type="button"
               onClick={() => setSelected(index)}
               initial={reduceMotion ? false : { opacity: 0, y: 32 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.16 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: (index % 3) * 0.08, ease: [0.22, 1, 0.36, 1] }}
               className={`gallery-item gallery-item-${index + 1} group relative overflow-hidden bg-[#ddd5c7] text-left ${ratioClasses[item.ratio]}`}
               aria-label={`Открыть фотографию: ${item.alt}`}
