@@ -197,7 +197,7 @@ const content = {
   },
   invitation: {
     label: 'A SPECIAL INVITATION',
-    greeting: 'Дорогая Адалят,',
+    greeting: 'Дорогая Моя,',
     paragraphs: [
       'Приглашаю тебя разделить со мной один особенный вечер.',
       'Вечер, который хочется запомнить не только фотографиями, но и тем чувством, которое останется после него.',
@@ -212,11 +212,8 @@ const content = {
   },
   location: {
     label: 'WHERE',
-    name: '[LOCATION NAME]',
-    address: '[ADDRESS]',
-    mapsUrl: '[MAPS_URL]',
-    appleMapsUrl: '[APPLE_MAPS_URL]',
-    buttonLabel: 'Open location',
+    name: 'Seven',
+    address: 'Пр. Аль-Фараби 77/7',
   },
   dressCode: {
     title: 'Dress code',
